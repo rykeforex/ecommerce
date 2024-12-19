@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Greene Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #a8dadc, #457b9d);
+            color: #333;
+        }
+        header, footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .checkout {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 600px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .checkout h2 {
+            text-align: center;
+        }
+        .checkout form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .checkout input, .checkout button {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .checkout button {
+            background: green;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <section class="checkout">
+        <h2>Billing Information</h2>
+        <form action="#" method="POST">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Shipping Address" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Postal Code" required>
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Greene Store. All rights reserved.</p>
+        <a href="cart.html" style="color: white; text-decoration: none;">Back to Cart</a>
+    </footer>
+</body>
+</html>

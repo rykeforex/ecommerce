@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Greene Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #a8dadc, #457b9d);
+            color: #333;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff; /* White text for better contrast */
+            font-weight: bold;
+        }
+        .cart-container {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9); /* Light white background for cart */
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px; /* Centering the cart */
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .cart-item img {
+            width: 80px; /* Thumbnail size */
+            height: auto;
+        }
+        .item-details {
+            flex-grow: 1; /* Allow details to take remaining space */
+            padding-left: 10px; /* Space between image and details */
+        }
+        .checkout-button {
+            background-color: #66cc66; /* Light green */
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .checkout-button:hover {
+            background-color: #4db84d; /* Darker shade on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="cart-container">
+        <h2>Items in Your Cart</h2>
+
+        <!-- Example Cart Items -->
+        <div class="cart-item">
+            <img src="controller2.jpg" alt="Product Name A">
+            <div class="item-details">
+                <h3>PS5 Controller </h3>
+                <p>$39.99</p>
+                <p>Quantity:
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </p>
+                <button style="color:red;">Remove</button> <!-- Remove button -->
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="airpods.jpg" alt="Product Name B">
+            <div class="item-details">
+                <h3>Airpods Pro </h3>
+                <p>$59.99</p>
+                <p>Quantity:
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </p>
+                <button style="color:red;">Remove</button> <!-- Remove button -->
+            </div>
+        </div>
+
+        <!-- Total Price -->
+        <div class="cart-item" style="font-weight:bold;">
+            <span>Total:</span>
+            <span>$99.98</span> <!-- Example total -->
+        </div>
+
+        <!-- Checkout Button -->
+        <a href="checkout.html"><button class="checkout-button">Proceed to Checkout</button></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Greene Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
